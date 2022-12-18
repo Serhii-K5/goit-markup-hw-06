@@ -70,7 +70,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="site-theme">Effective Solutions for Your Business</h1>
-          <button class="filter-button" type="button" data-modal-open>
+          <button class="style-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -330,42 +330,42 @@
             <li class="customers-item">
               <a href="" class="customers-item-link">
                 <svg class="card-svg">
-                  <use href="./images/icons.svg#Logo0"></use>
+                  <use href="./images/icons.svg#logo0"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-item-link">
                 <svg class="card-svg">
-                  <use href="./images/icons.svg#Logo1"></use>
+                  <use href="./images/icons.svg#logo1"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-item-link">
                 <svg class="card-svg">
-                  <use href="./images/icons.svg#Logo2"></use>
+                  <use href="./images/icons.svg#logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-item-link">
                 <svg class="card-svg">
-                  <use href="./images/icons.svg#Logo3"></use>
+                  <use href="./images/icons.svg#logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-item-link">
                 <svg class="card-svg">
-                  <use href="./images/icons.svg#Logo4"></use>
+                  <use href="./images/icons.svg#logo4"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a href="" class="customers-item-link">
                 <svg class="card-svg">
-                  <use href="./images/icons.svg#Logo5"></use>
+                  <use href="./images/icons.svg#logo5"></use>
                 </svg>
               </a>
             </li>
@@ -421,14 +421,58 @@
             </ul>
           </li>
         </ul>
+        <!-- Form footer -->
+        <!-- <form class="subscribe-form"> -->
+        <form class="send-form">
+          <label class="subscribe-form-label">
+            <!-- <label class="send-form-label"> -->
+            <span class="subscribe-form-label-text">Subscribe</span>
+            <span class="subscribe-overlay">
+              <input
+                type="email"
+                name="user_subscribe"
+                class="subscribe-form-input"
+                title="mail@example.com"
+                placeholder="E-mail"
+              />
+              <button type="submit" href="" class="subscribe-btn">
+                Subscribe
+                <svg class="subscribe-form-btn-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </span>
+          </label>
+          <!-- <button type="submit" href="" class="subscribe-btn">Subscribe</button> -->
+        </form>
+        <!-- <form class="subscribe-form">
+          <label class="subscribe-form-label">
+            <span class="subscribe-form-label-text">Subscribe</span>
+            <input
+              type="email"
+              name="user_subscribe"
+              class="subscribe-form-input"
+              title="mail@example.com"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="button" class="subscribe-btn">
+            <span class="subscribe-form-label-text">Subscribe</span> -->
+        <!-- <svg class="modal-close-btn-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg> -->
+        <!-- </button>
+        </form> -->
       </div>
     </footer>
 
     <!-- Window modal -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop" data-modal> -->
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
+            <!-- <use href="./images/icons.svg#close-black"></use> -->
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
@@ -440,7 +484,7 @@
           </p>
           <label class="send-form-label">
             <span class="send-form-label-text">Name</span>
-            <div class="send-form-label-wrapper">
+            <span class="send-form-label-wrapper">
               <input
                 type="text"
                 name="user_name"
@@ -448,55 +492,44 @@
                 required
                 pattern="^[a-zA-Zа-яА-Я]+$"
                 minlength="2"
+                title="Supported characters: A-Z, a-z, A-Z, А-Я, а-я]"
               />
               <svg class="send-form-user-icon">
-                <use
-                  class="send-form-user-icon1"
-                  href="./images/icons.svg#icon-user"
-                  width="12"
-                  height="12"
-                ></use>
+                <use href="./images/icons.svg#icon-user"></use>
+                <!-- class="send-form-user-icon1" -->
+                <!-- href="./images/icons.svg#icon-user" -->
               </svg>
-              <!-- <span class="send-form-input-icon"></span> -->
-            </div>
+            </span>
           </label>
           <label class="send-form-label">
             <span class="send-form-label-text">Phone</span>
-            <div class="send-form-label-wrapper">
+            <span class="send-form-label-wrapper">
               <input
                 type="tel"
                 name="user_phone"
                 class="send-form-input"
                 required
                 pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
-                title="xxx-xxx-xx-xx"
+                title="Input format: xxx-xxx-xx-xx"
               />
-              <svg class="send-form-user-icon">
-                <use
-                  href="./images/icons.svg#icon-tel"
-                  width="13"
-                  height="13"
-                ></use>
+              <svg class="send-form-user-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-tel"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="send-form-label">
-            <span class="send-form-label-text">Phone</span>
-            <div class="send-form-label-wrapper">
+            <span class="send-form-label-text">Email</span>
+            <span class="send-form-label-wrapper">
               <input
                 type="email"
                 name="user_email"
                 class="send-form-input"
                 title="mail@example.com"
               />
-              <svg class="send-form-user-icon">
-                <use
-                  href="./images/icons.svg#icon-email"
-                  width="15"
-                  height="12"
-                ></use>
+              <svg class="send-form-user-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="send-form-label">
             <span class="send-form-label-text">Comment</span>
@@ -511,14 +544,14 @@
             id="privacy-policy"
             type="checkbox"
             name="user_police"
-            class="send-form-checkbox"
+            class="send-form-checkbox visually-hidden"
           />
           <label for="privacy-policy" class="send-form-label-check">
-            I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
+            I accept the terms and conditions of the&nbsp;
+            <a href="" class="">Privacy Policy</a>
           </label>
-
-          <button type="submit" href="" class="send-form-btn">Send</button>
+          <!-- <button type="submit" href="" class="send-form-btn">Send</button> -->
+          <button type="submit" href="" class="style-button">Send</button>
         </form>
       </div>
     </div>
