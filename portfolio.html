@@ -30,9 +30,11 @@
           <div class="container-nav">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link underlining" href="./index.html"
-                  >Studio</a
-                >
+                <div>
+                  <a class="navigation-link underlining" href="./index.html"
+                    >Studio
+                  </a>
+                </div>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link underlining" href="./portfolio.html"
@@ -40,9 +42,7 @@
                 >
               </li>
               <li class="navigation-item">
-                <a class="navigation-link underlining" href="./proba.html"
-                  >Contacts</a
-                >
+                <a class="navigation-link underlining" href="">Contacts</a>
               </li>
             </ul>
           </div>
@@ -332,6 +332,27 @@
             </ul>
           </li>
         </ul>
+        <!-- Form footer -->
+        <form class="send-form">
+          <label class="subscribe-form-label">
+            <span class="subscribe-form-label-text">Subscribe</span>
+            <span class="subscribe-overlay">
+              <input
+                type="email"
+                name="user_subscribe"
+                class="subscribe-form-input"
+                title="mail@example.com"
+                placeholder="E-mail"
+              />
+              <button type="submit" href="" class="subscribe-btn">
+                Subscribe
+                <svg class="subscribe-form-btn-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </span>
+          </label>
+        </form>
       </div>
     </footer>
   </body>
